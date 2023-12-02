@@ -1,3 +1,6 @@
-var number = 10;
-
-console.log(number);
+var x = 10;
+var y = 3;
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
+console.log(x / y);
