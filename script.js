@@ -31,10 +31,25 @@
 //alert(x + y)
 
 
-var x = +prompt(15);
-var y = +prompt(15);
-var z = +prompt(15);
-var res = (x / y / z);
-alert(res)
+//var x = +prompt(15);
+//var y = +prompt(15);
+//var z = +prompt(15);
+//var res = (x / y / z);
+//alert(res)
 
+
+var x = +prompt('yozing birinchi raqami 1');
+var y = +prompt('yozing ikkinchi raqami 1');
+
+
+if (x > y){
+    alert('birinchi raqam 1 kotta');
+}
+
+else if(x < y){
+    alert('ikkinchi raqam 2 kotta');
+}
+else{
+    alert('raqamlar barvar');
+}
 
