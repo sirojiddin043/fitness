@@ -67,12 +67,54 @@
 //}
 //num()
 
-var answer = document.getElementById('answer');
-var btn = document.getElementById('btn');
-var out = document.getElementById('out');
-var random = Math.floor(Math.random() * 10 + 1);
-console.log(random);
+//var answer = document.getElementById('answer');
+//var btn = document.getElementById('btn');
+//var out = document.getElementById('out');
+//var random = Math.floor(Math.random() * 10 + 1);
+//console.log(random);
+//
+//btn.onclick = function () {
+//    if(isNaN(answer.value)){
+//        out.innerHTML = 'soni yozing!!';
+//    }
+//    else if(answer.value > random){
+//        out.innerHTML = 'sizning soningiz kotta oylaganizdan';
+//    }
+//    else if(answer.value < random){
+//        out.innerHTML = 'sizning soningiz kam oylaganizdan';
+//    }
+//    else{
+//        out.innerHTML = 'tabrikliman!! siz toptingiz';
+//    }
+//}
 
-btn.onclick = function () {
-    
+//var week = Math.floor(Math.random() * 7 + 1);
+
+//var x = +prompt(4);
+//var y = +prompt(2);
+//var z = +prompt(3);
+//
+//if(x > y || x > z){
+//    alert('birinchi x kop')
+//}
+//else if(x < y || y > z){
+//    alert('ikkinchi y kop')
+//}
+//else if(z > y || y < z){
+//    alert('uchinchi z kop')
+//}
+
+var age = +prompt();
+var res = 18;
+
+if(res > age){
+    out.innerHTML = 'sizga hali oqish va oqish kere';
 }
+else if(res < age){
+    out.innerHTML = 'sizga hali ishlash va ishlash kere';
+}
+else  {
+    out.innerHTML = 'sizga pensiga chiqshingiz kere';
+}
+
+
