@@ -104,17 +104,25 @@
 //    alert('uchinchi z kop')
 //}
 
-var age = +prompt();
-var res = 18;
+//var age = +prompt();
+//var res = 18;
+//
+//if(res > age){
+//    out.innerHTML = 'sizga hali oqish va oqish kere';
+//}
+//else if(res < age){
+//    out.innerHTML = 'sizga hali ishlash va ishlash kere';
+//}
+//else  {
+//}
+//    out.innerHTML = 'sizga pensiga chiqshingiz kere';
 
-if(res > age){
-    out.innerHTML = 'sizga hali oqish va oqish kere';
-}
-else if(res < age){
-    out.innerHTML = 'sizga hali ishlash va ishlash kere';
-}
-else  {
-    out.innerHTML = 'sizga pensiga chiqshingiz kere';
+var a = 0;
+var b = 10;
+
+while(a <= b){
+    console.log(a);
+    a++;
 }
 
 
