@@ -88,7 +88,55 @@
 //    }
 //}
 
-//var week = Math.floor(Math.random() * 7 + 1);
+// var week = +prompt('1 dan 7 gacha');
+// if(week == 1){
+//     alert('du')
+// }
+// else if(week == 2){
+//     alert('se')
+// }
+// else if(week == 3){
+//     alert('chor')
+// }
+// else if(week == 4){
+//     alert('pay')
+// }
+// else if(week == 5){
+//     alert('juma')
+// }
+// else if(week == 6){
+//     alert('shanba')
+// }
+// else if(week == 7){
+//     alert('yahsanba')
+// }
+
+// switch (week) {
+//     case '1':
+//         alert('du')
+//         break;
+//         case '2':
+//             alert('se')
+//             break;
+//             case 3:
+//                 alert('chu')
+//                 break;
+//                 case 4:
+//                     alert('pay')
+//                     break;
+//                     case 5:
+//                     alert('juma')
+//                     break;
+//                     case 6:
+//                     alert('shan')
+//                     break;
+//                     case 7:
+//                         alert('yak')
+//                         break;
+//                         default:
+//                             alert('bunaqa kun yoq')
+// }
+
 
 //var x = +prompt(4);
 //var y = +prompt(2);
@@ -117,12 +165,21 @@
 //}
 //    out.innerHTML = 'sizga pensiga chiqshingiz kere';
 
-var a = 0;
-var b = 10;
+// var a = 0;
+// var b = 10;
+// //
+// //do{
+// //    console.log(a);
+// //    a++;
+// //}
+// //
+// //while(a <= b){
+// //    console.log(a);
+// //    a++;
+// //}
+// for(var i = 0; i <= 10; i++){
+//     console.log(i);
+// }
 
-while(a <= b){
-    console.log(a);
-    a++;
-}
 
 
