@@ -182,9 +182,18 @@
 // }
 
 
-if(var  i = 0; i <= 100; i++){
-    console.log(i)
+// for(var i = 30; i <= 100; i++){
+//     document.write(i + '<br/>')
+// }
+// var summa ;
+
+// for(var i = 0; i <= 100; i++){
+//     if(summa % 100 == i ){
+//         console.log(i)
+//     }
+//  }
+
+var summa = 1;
+for(var i = 1; i <= 20; i++){
+   console.log(summa)
 }
-
-
-
