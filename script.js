@@ -193,7 +193,20 @@
 //     }
 //  }
 
-var summa = 1;
-for(var i = 1; i <= 20; i++){
-   console.log(summa)
-}
+// var summa = 1;
+// for(var i = 1; i <= 20; i++){
+//    console.log(summa)
+// }
+
+// var array = ['apelsin','banan','olma','limon',1,2,3,4,5,6];
+//  array.push('grusha'); //elementlani oxirgiga massivlani qoyiladi
+//  array.unshift('tarvuz'); //elementi boshiga qoyiladi massivlani
+
+
+// array.pop(); oxirdagi elementi udalit qiladi
+// array.shift();boshidagi elementi udalit qiladi
+// array.splice();
+// console.log(array[3]) usha massivi chiqazib beradi
+//  console.log(array.length) //strakalani chiqazib beradi 
+
+var fruits = ['apelsin','banan','olma','limon'];
