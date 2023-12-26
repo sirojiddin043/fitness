@@ -210,3 +210,13 @@
 //  console.log(array.length) //strakalani chiqazib beradi 
 
 var fruits = ['apelsin','banan','olma','limon'];
+
+var out = document.querySelector('.out');
+var addFruit = document.querySelector('.add-fruit');
+var delFruit = document.querySelector('.del-fruit');
+var add = document.querySelector('.add');
+var del = document.querySelector('.del');
+
+for(i = 0; i < fruits.length; i++){
+    out.innerHTML += fruits[i] + '<br/>';
+}
