@@ -209,55 +209,61 @@
 // console.log(array[3]) usha massivi chiqazib beradi
 //  console.log(array.length) //strakalani chiqazib beradi 
 
-var fruits = ['apelsin','banan','olma','limon'];
+// var fruits = ['apelsin','banan','olma','limon'];
 
-var out = document.querySelector('.out');
+// var out = document.querySelector('.out');
 
 
-var add = document.querySelector('.add');
-var del = document.querySelector('.del');
+// var add = document.querySelector('.add');
+// var del = document.querySelector('.del');
 
-for(i = 0; i < fruits.length; i++){
-    out.innerHTML += fruits[i] + '<br/>';
-}
+// for(i = 0; i < fruits.length; i++){
+//     out.innerHTML += fruits[i] + '<br/>';
+// }
 
-add.onclick = function(){
-    var addFruit = document.querySelector('.add-fruit').value;
-    if(!addFruit){
-        alert('poliyani toldiring')
-    }
-    else{
-       fruits.push(addFruit); 
-       out.innerHTML = '';
-       for(i = 0; i < fruits.length; i++){
-        out.innerHTML += fruits[i] + '<br/>';
-       }
-    }
-    document.querySelector('.add-fruit').value = '';
+// add.onclick = function(){
+//     var addFruit = document.querySelector('.add-fruit').value;
+//     if(!addFruit){
+//         alert('poliyani toldiring')
+//     }
+//     else{
+//        fruits.push(addFruit); 
+//        out.innerHTML = '';
+//        for(i = 0; i < fruits.length; i++){
+//         out.innerHTML += fruits[i] + '<br/>';
+//        }
+//     }
+//     document.querySelector('.add-fruit').value = '';
     
     
     
-    console.log(addFruit);
-    console.log(fruits)
-}
-del.onclick = function(){
-    var delFruit = document.querySelector('.del-fruit').value;
-    if(!delFruit){
-        alert('poliyani nomerini yozing')
-    }
-    else if(delFruit == 0 || delFruit > fruits.length){
-        alert('nomer tovari tori yozing');
-    }
-    else{
-        fruits.splice(delFruit -1, 1);
-        out.innerHTML = '';
-        for(i = 0; i < fruits.length; i++){
-         out.innerHTML += fruits[i] + '<br/>';
-        }
-    }
-    document.querySelector('.del-fruit').value = '';
+//     console.log(addFruit);
+//     console.log(fruits)
+// }
+// del.onclick = function(){
+//     var delFruit = document.querySelector('.del-fruit').value;
+//     if(!delFruit){
+//         alert('poliyani nomerini yozing')
+//     }
+//     else if(delFruit == 0 || delFruit > fruits.length){
+//         alert('nomer tovari tori yozing');
+//     }
+//     else{
+//         fruits.splice(delFruit -1, 1);
+//         out.innerHTML = '';
+//         for(i = 0; i < fruits.length; i++){
+//          out.innerHTML += fruits[i] + '<br/>';
+//         }
+//     }
+//     document.querySelector('.del-fruit').value = '';
     
 
-    console.log(fruits)
-}
+//     console.log(fruits)
+// }
+
+// const burger = document.querySelector('.burger');
+
+// burger.addEventListener('click', (e) =>{
+//     e.target.classList.toggle('open');
+// }); 
 

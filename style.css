@@ -1,3 +1,34 @@
-body{
-   
+/* .burger{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
 }
+.line{
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    pointer-events: none;
+    border-radius: 13px;
+    transition: transform 0.3s ease-in-out;
+}
+.burger.open{
+    transform: rotate(90deg);
+}
+.burger.open .line:nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+}
+.burger.open .line:nth-child(2){
+   opacity: 0;
+}
+.burger.open .line:nth-child(3){
+    transform: translateY(-6px) rotate(-45deg);
+}
+*/
+body{
+    background: black;
+} 
