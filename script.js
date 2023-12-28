@@ -267,3 +267,9 @@
 //     e.target.classList.toggle('open');
 // }); 
 
+var color = ['pink', 'black','white','red','green','blue','yellow','brown','gray','orange'];
+var random = Math.floor(Math.random() * color.length);
+var randomColor = color[random];
+while (true) {
+    var max = +prompt('hush kelibsiz oyinga "rangni talang" \n dsfasfddsf')
+}
