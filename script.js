@@ -270,6 +270,38 @@
 var color = ['pink', 'black','white','red','green','blue','yellow','brown','gray','orange'];
 var random = Math.floor(Math.random() * color.length);
 var randomColor = color[random];
+console.log(randomColor)
 while (true) {
-    var max = +prompt('hush kelibsiz oyinga "rangni talang" \n dsfasfddsf')
+    var max = +prompt('hush kelibsiz oyinga "rangni talang" \n' + color + '\nmiqdorini yozing miqdori 1dan 5gacha ');
+    if(isNaN(max)){
+        alert('soni yozing 1 dan 5 gacha');
+    }
+    else if(max > 0 && max <= 5){
+        break;
+    }
+    else{
+        alert('soni yozing 1 dan 5 gacha');
+    }
+}
+
+var i = 0;
+
+while (i < max) {
+    i++;
+    var answer = prompt('rangni yozing nomini. sizda bor' + max + 'popitka. popitka ' + i );
+    answer = answer.toLowerCase();
+    if(answer == null){
+        alert('siz oyini qarshi boldingiz')
+        break;
+    }
+    else if(answer != randomColor){
+        alert('не правильно');
+    }
+    else if(answer == randomColor){
+        alert('tabrikliman siz toptingiz');
+        break;
+    }
+    if(i == max){
+        alert('popitkalringiz tugadi. siz yutqazdingiz');
+    }
 }
