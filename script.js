@@ -317,13 +317,25 @@
 //     private: false, 
 // };
 
-const a = prompt("oxirgi korgan serialingiz?");
- b = prompt("nechi baxo berasiz?");
- c = prompt("oxirgi korgan serialingiz?");
- d = prompt("nechi baxo berasiz?");
+// const a = prompt("oxirgi korgan serialingiz?");
+//  b = prompt("nechi baxo berasiz?");
+//  c = prompt("oxirgi korgan serialingiz?");
+//  d = prompt("nechi baxo berasiz?");
 
- seriesDB.series[a] = b
- seriesDB.series[c] = d
-let series = prompt('oxirgi korgan serialingiz?');
+//  seriesDB.series[a] = b
+//  seriesDB.series[c] = d
+// let series = prompt('oxirgi korgan serialingiz?');
 
+const a = +prompt(a)
+for(a = 1; a <= 10; a++){
+    if(a > "oxirga korgani swralingiz"){
+        console.log(a);
+        if("oxirga korgani swralingiz" > 10){
+            console.log("oxirga korgani swralingiz");
+        }
+    }
+    else{
+        console.log("yoq man kormaganman bu serali")
+    }
+}
 
