@@ -305,3 +305,25 @@
 //         alert('popitkalringiz tugadi. siz yutqazdingiz');
 //     }
 // }
+
+// const
+
+// let numberOfSeries = +prompt('nechta serial kordingiz?', "");
+// let seriesDB = {
+//     count: numberOfSeries,
+//     series: {},
+//     actors: {},
+//     genres: [],
+//     private: false, 
+// };
+
+const a = prompt("oxirgi korgan serialingiz?");
+ b = prompt("nechi baxo berasiz?");
+ c = prompt("oxirgi korgan serialingiz?");
+ d = prompt("nechi baxo berasiz?");
+
+ seriesDB.series[a] = b
+ seriesDB.series[c] = d
+let series = prompt('oxirgi korgan serialingiz?');
+
+
