@@ -310,20 +310,38 @@
 
 
 
-const theif = {
-    jacket: "black",
-    height: 1.93,
-    colors:{
-        hair: "dark blue",
-        style: "string",
-    },
+
+
+//  massiv 
+// bu massiv
+
+const colc = [1, 2, 3]
+
+
+
+
+//spead operator
+// bu spead operator
+
+function logger(x,y,z) {
+    console.log(x + y + z)
+}
+logger(1, 2, 3)
+
+
+// mussiv bilan spead operatiri birlashtirilgani
+
+const arr = ['x', 'y']
+const newArr = [...arr]
+
+const numbers = {
+    x: 10,
+    y: 5
 };
-// theif.howOf();
-const{hair, style} = theif.colors;
 
-console.log(hair);;
-console.log(style);
-
+const newNumbers = {...numbers}
+console.log(numbers);
+console.log(newNumbers);
 
 
 
@@ -332,6 +350,34 @@ console.log(style);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const theif = {
+//     jacket: "black",
+//     height: 1.93,
+//     colors:{
+//         hair: "dark blue",
+//         style: "string",
+//     },
+// };
+// // theif.howOf();
+// const{hair, style} = theif.colors;
+
+// console.log(hair);;
+// console.log(style);
 
 
 
