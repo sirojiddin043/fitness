@@ -308,34 +308,117 @@
 
 // const
 
-// let numberOfSeries = +prompt('nechta serial kordingiz?', "");
-// let seriesDB = {
+
+
+const theif = {
+    jacket: "black",
+    height: 1.93,
+    colors:{
+        hair: "dark blue",
+        style: "string",
+    },
+};
+// theif.howOf();
+const{hair, style} = theif.colors;
+
+console.log(hair);;
+console.log(style);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let numberOfSeries;
+
+// function startApp() {
+//     numberOfSeries = +prompt('nechta serial kordingiz?', "");
+
+//     while (
+//         numberOfSeries == "" ||
+//         numberOfSeries == null ||
+//         isNaN(numberOfSeries)
+//     ) {
+//         numberOfSeries = +prompt('nechta serial kordingiz?', "");
+//     }
+
+// }
+
+// startApp();
+
+// const seriesDB = {    
 //     count: numberOfSeries,
 //     series: {},
 //     actors: {},
 //     genres: [],
 //     private: false, 
-// };
+//  };
 
-// const a = prompt("oxirgi korgan serialingiz?");
-//  b = prompt("nechi baxo berasiz?");
-//  c = prompt("oxirgi korgan serialingiz?");
-//  d = prompt("nechi baxo berasiz?");
+//  function rememberMySeries() {
+//  for(i = 0; i < 2; i++){
+//     const a = prompt("oxirgi korgan serialingiz?");
+//      b = prompt("nechi baxo berasiz?");
+//      seriesDB.series[a] = b
+//      if (a != null && b != null && a != "" && b != "") {
+//         seriesDB.series[a] = b;
+//         console.log("done");
+//      }
+//      else{
+//         console.log("error");
+//         i--;
+//      }
+//    }
+//  }
 
-//  seriesDB.series[a] = b
-//  seriesDB.series[c] = d
-// let series = prompt('oxirgi korgan serialingiz?');
+// function detectLevelSeries(count) {
+//     if(seriesDB < 5){
+//         console.log("kam serial korgansiz");
+//     }
+//     else if(seriesDB >= 5 && seriesDB < 10){
+//         console.log("siz classik tamoshabin ekasiz");
+//     }
+//     else if(seriesDB >= 10){
+//         console.log("siz serialchi zvezda ekansiz");
+//     }
+//     else{
+//         console.log("error");
+//     }
+// }
+// detectLevelSeries();
 
-const a = +prompt(a)
-for(a = 1; a <= 10; a++){
-    if(a > "oxirga korgani swralingiz"){
-        console.log(a);
-        if("oxirga korgani swralingiz" > 10){
-            console.log("oxirga korgani swralingiz");
-        }
-    }
-    else{
-        console.log("yoq man kormaganman bu serali")
-    }
-}
 
+
+
+// function showDb(hidden) {   
+//     if(!hidden){
+//         console.log(seriesDB);
+//     }
+// }
+// showDb(seriesDB.private);
+
+// let writeGenres = +prompt('yahshi korgan janiringiz?', "");
+
+// function writeGenres() {
+//     for (let i = 0; i <= 2 ; i++) {
+//         const genre = prompt(`yahshi korgan janiringiz ${i + 1}`);
+//         seriesDB.genres[i] = genre;
+//     }
+// }
