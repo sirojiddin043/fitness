@@ -368,6 +368,55 @@
 
 
 
+// malumot stilini almashtirish matindan songa va sondan matinga
+
+// to string
+
+// 1-)
+// console.log(typeof String(4))
+
+// // 2-)
+// console.log(typeof('sirojiddin' + 21));
+
+// // 3-)
+// const youtubeChannel = 10 
+// console.log('youtube.com/channel' + youtubeChannel);
+
+// to number
+
+//  1-)
+// console.log(typeof Number(4));
+
+// // 2-)
+//  console.log(typeof + '5');
+
+// // 3-)
+// console.log(typeof parseInt('15'));
+
+// const name = parseInt(prompt("age"))
+
+
+// to Boolean
+
+// 0, "", null, undefined, NaN = xar doim false boladi
+
+// let age = 0
+
+// if(age){
+//     console.log('g')
+// }
+
+// age = 18
+
+// if(age){
+//     console.log('g')
+// }
+
+// console.log(typeof Boolean(4));
+
+// console.log(typeof !!'4')
+
+
 
 
 
@@ -407,101 +456,101 @@
 
 
 
- let numberOfSeries;
+//  let numberOfSeries;
 
 
-const seriesDB = {    
-     count: numberOfSeries,
-     series: {},
-     actors: {},
-     genres: [],
-     private: false, 
-     start: function () {
-        seriesDB.count = +prompt('nechta serial kordingiz?', "");
+// const seriesDB = {    
+//      count: numberOfSeries,
+//      series: {},
+//      actors: {},
+//      genres: [],
+//      private: false, 
+//      start: function () {
+//         seriesDB.count = +prompt('nechta serial kordingiz?', "");
 
-     while (
-         seriesDB.count == "" ||
-         numberOfSeries == null ||
-         isNaN(seriesDB.count)
-     ) {
-         seriesDB.count = +prompt('nechta serial kordingiz?', "");
-     }
-     },
-     rememberMySeries: function(){
-     for(i = 0; i < 2; i++){
-        const a = prompt("oxirgi korgan serialingiz?");
-         b = prompt("nechi baxo berasiz?");
-         seriesDB.series[a] = b
-         if (a != null && b != null && a != "" && b != "") {
-            seriesDB.series[a] = b;
-            console.log("done");
-         }
-         else{
-            console.log("error");
-            i--;
-         }
-       }
-    },
-    detectLevelSeries: function(count) {
-        if(seriesDB < 5){
-            console.log("kam serial korgansiz");
-        }
-        else if(seriesDB >= 5 && seriesDB < 10){
-            console.log("siz classik tamoshabin ekasiz");
-        }
-        else if(seriesDB >= 10){
-            console.log("siz serialchi zvezda ekansiz");
-        }
-        else{
-            console.log("error");
-        }
-  },
-  showDb: function() {   
-    if(!seriesDB.private ){
-        console.log(seriesDB);
-    }
-  },
-  visibleDB: function () {
-    if(seriesDB.private){
-        seriesDB.private = false
-    }
-    else{
-        seriesDB.private = true
-    }
-},
+//      while (
+//          seriesDB.count == "" ||
+//          numberOfSeries == null ||
+//          isNaN(seriesDB.count)
+//      ) {
+//          seriesDB.count = +prompt('nechta serial kordingiz?', "");
+//      }
+//      },
+//      rememberMySeries: function(){
+//      for(i = 0; i < 2; i++){
+//         const a = prompt("oxirgi korgan serialingiz?");
+//          b = prompt("nechi baxo berasiz?");
+//          seriesDB.series[a] = b
+//          if (a != null && b != null && a != "" && b != "") {
+//             seriesDB.series[a] = b;
+//             console.log("done");
+//          }
+//          else{
+//             console.log("error");
+//             i--;
+//          }
+//        }
+//     },
+//     detectLevelSeries: function(count) {
+//         if(seriesDB < 5){
+//             console.log("kam serial korgansiz");
+//         }
+//         else if(seriesDB >= 5 && seriesDB < 10){
+//             console.log("siz classik tamoshabin ekasiz");
+//         }
+//         else if(seriesDB >= 10){
+//             console.log("siz serialchi zvezda ekansiz");
+//         }
+//         else{
+//             console.log("error");
+//         }
+//   },
+//   showDb: function() {   
+//     if(!seriesDB.private ){
+//         console.log(seriesDB);
+//     }
+//   },
+//   visibleDB: function () {
+//     if(seriesDB.private){
+//         seriesDB.private = false
+//     }
+//     else{
+//         seriesDB.private = true
+//     }
+// },
 
-  writeGenres: function() {
-    // for (let i = 0; i <= 3 ; i++) {
-    //     const genre = prompt(`yahshi korgan janiringiz ${i + 1}`);
-    //     if(genre === '' || genre === null){
-    //         console.log("siz notori malumot kiritingiz")
-    //         i--
-    //     }
-    //     else{
-    //         seriesDB.genres[i]= genre
-    //     }
-        // seriesDB.genres[i] = genre;s
-    // }
-    let genres = prompt(
-        "yahshi korgan janiringizi vergul yordamida yozing"
-    ).toLowerCase()
+//   writeGenres: function() {
+//     // for (let i = 0; i <= 3 ; i++) {
+//     //     const genre = prompt(`yahshi korgan janiringiz ${i + 1}`);
+//     //     if(genre === '' || genre === null){
+//     //         console.log("siz notori malumot kiritingiz")
+//     //         i--
+//     //     }
+//     //     else{
+//     //         seriesDB.genres[i]= genre
+//     //     }
+//         // seriesDB.genres[i] = genre;s
+//     // }
+//     let genres = prompt(
+//         "yahshi korgan janiringizi vergul yordamida yozing"
+//     ).toLowerCase()
     
-         if(genres === '' || genres === null){
-             console.log("siz notori malumot kiritingiz")
-             i--
-         }
-         else{
-             seriesDB.genres = genres.split(', ')
-             seriesDB.genres.sort()
-         }
+//          if(genres === '' || genres === null){
+//              console.log("siz notori malumot kiritingiz")
+//              i--
+//          }
+//          else{
+//              seriesDB.genres = genres.split(', ')
+//              seriesDB.genres.sort()
+//          }
 
    
 
-    seriesDB.genres.forEach((item, idx) =>{
-    console.log(`yahshi korgan janiringizi  ${idx + 1} - nomi ${item}`)
-    })
-  },
-}
+//     seriesDB.genres.forEach((item, idx) =>{
+//     console.log(`yahshi korgan janiringizi  ${idx + 1} - nomi ${item}`)
+//     })
+//   },
+// }
 
 
 
@@ -523,6 +572,6 @@ const seriesDB = {
 
  
 
- let writeGenres = +prompt('yahshi korgan janiringiz?', "");
+//  let writeGenres = +prompt('yahshi korgan janiringiz?', "");
 
  
