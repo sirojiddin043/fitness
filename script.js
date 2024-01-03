@@ -315,33 +315,55 @@
 //  massiv 
 // bu massiv
 
-const colc = [1, 2, 3]
+// const colc = [1, 2, 3]
 
 
 
 
-//spead operator
-// bu spead operator
+// //spead operator
+// // bu spead operator
 
-function logger(x,y,z) {
-    console.log(x + y + z)
-}
-logger(1, 2, 3)
+// function logger(x,y,z) {
+//     console.log(x + y + z)
+// }
+// logger(1, 2, 3)
 
 
-// mussiv bilan spead operatiri birlashtirilgani
+// // mussiv bilan spead operatiri birlashtirilgani
 
-const arr = ['x', 'y']
-const newArr = [...arr]
+// const arr = ['x', 'y']
+// const newArr = [...arr]
 
-const numbers = {
-    x: 10,
-    y: 5
-};
+// const numbers = {
+//     x: 10,
+//     y: 5
+// };
 
-const newNumbers = {...numbers}
-console.log(numbers);
-console.log(newNumbers);
+// const newNumbers = {...numbers}
+// console.log(numbers);
+// console.log(newNumbers);
+
+
+
+
+
+//  OOP hamma narsani boxlab beradi
+
+// const car = {
+//     motor: 'x',
+//     color: 'red',
+//     isAirbag: true,
+//     isSpeed: function () {
+//         console.log(320)
+//     },
+// }
+// const gm = {
+//     isAirbag: false,
+// }
+
+// Object.setPrototypeOf(gm,car)
+// const bmw = Object.create(car)
+// console.log(bmw)
 
 
 
@@ -385,86 +407,122 @@ console.log(newNumbers);
 
 
 
+ let numberOfSeries;
+
+
+const seriesDB = {    
+     count: numberOfSeries,
+     series: {},
+     actors: {},
+     genres: [],
+     private: false, 
+     start: function () {
+        seriesDB.count = +prompt('nechta serial kordingiz?', "");
+
+     while (
+         seriesDB.count == "" ||
+         numberOfSeries == null ||
+         isNaN(seriesDB.count)
+     ) {
+         seriesDB.count = +prompt('nechta serial kordingiz?', "");
+     }
+     },
+     rememberMySeries: function(){
+     for(i = 0; i < 2; i++){
+        const a = prompt("oxirgi korgan serialingiz?");
+         b = prompt("nechi baxo berasiz?");
+         seriesDB.series[a] = b
+         if (a != null && b != null && a != "" && b != "") {
+            seriesDB.series[a] = b;
+            console.log("done");
+         }
+         else{
+            console.log("error");
+            i--;
+         }
+       }
+    },
+    detectLevelSeries: function(count) {
+        if(seriesDB < 5){
+            console.log("kam serial korgansiz");
+        }
+        else if(seriesDB >= 5 && seriesDB < 10){
+            console.log("siz classik tamoshabin ekasiz");
+        }
+        else if(seriesDB >= 10){
+            console.log("siz serialchi zvezda ekansiz");
+        }
+        else{
+            console.log("error");
+        }
+  },
+  showDb: function() {   
+    if(!seriesDB.private ){
+        console.log(seriesDB);
+    }
+  },
+  visibleDB: function () {
+    if(seriesDB.private){
+        seriesDB.private = false
+    }
+    else{
+        seriesDB.private = true
+    }
+},
+
+  writeGenres: function() {
+    // for (let i = 0; i <= 3 ; i++) {
+    //     const genre = prompt(`yahshi korgan janiringiz ${i + 1}`);
+    //     if(genre === '' || genre === null){
+    //         console.log("siz notori malumot kiritingiz")
+    //         i--
+    //     }
+    //     else{
+    //         seriesDB.genres[i]= genre
+    //     }
+        // seriesDB.genres[i] = genre;s
+    // }
+    let genres = prompt(
+        "yahshi korgan janiringizi vergul yordamida yozing"
+    ).toLowerCase()
+    
+         if(genres === '' || genres === null){
+             console.log("siz notori malumot kiritingiz")
+             i--
+         }
+         else{
+             seriesDB.genres = genres.split(', ')
+             seriesDB.genres.sort()
+         }
+
+   
+
+    seriesDB.genres.forEach((item, idx) =>{
+    console.log(`yahshi korgan janiringizi  ${idx + 1} - nomi ${item}`)
+    })
+  },
+}
 
 
 
 
 
 
+//  startApp();
 
+ 
 
-// let numberOfSeries;
+ 
 
-// function startApp() {
-//     numberOfSeries = +prompt('nechta serial kordingiz?', "");
-
-//     while (
-//         numberOfSeries == "" ||
-//         numberOfSeries == null ||
-//         isNaN(numberOfSeries)
-//     ) {
-//         numberOfSeries = +prompt('nechta serial kordingiz?', "");
-//     }
-
-// }
-
-// startApp();
-
-// const seriesDB = {    
-//     count: numberOfSeries,
-//     series: {},
-//     actors: {},
-//     genres: [],
-//     private: false, 
-//  };
-
-//  function rememberMySeries() {
-//  for(i = 0; i < 2; i++){
-//     const a = prompt("oxirgi korgan serialingiz?");
-//      b = prompt("nechi baxo berasiz?");
-//      seriesDB.series[a] = b
-//      if (a != null && b != null && a != "" && b != "") {
-//         seriesDB.series[a] = b;
-//         console.log("done");
-//      }
-//      else{
-//         console.log("error");
-//         i--;
-//      }
-//    }
+//  function 
 //  }
-
-// function detectLevelSeries(count) {
-//     if(seriesDB < 5){
-//         console.log("kam serial korgansiz");
-//     }
-//     else if(seriesDB >= 5 && seriesDB < 10){
-//         console.log("siz classik tamoshabin ekasiz");
-//     }
-//     else if(seriesDB >= 10){
-//         console.log("siz serialchi zvezda ekansiz");
-//     }
-//     else{
-//         console.log("error");
-//     }
-// }
-// detectLevelSeries();
+//  detectLevelSeries();
 
 
 
 
-// function showDb(hidden) {   
-//     if(!hidden){
-//         console.log(seriesDB);
-//     }
-// }
-// showDb(seriesDB.private);
+ 
 
-// let writeGenres = +prompt('yahshi korgan janiringiz?', "");
+ let writeGenres = +prompt('yahshi korgan janiringiz?', "");
 
-// function writeGenres() {
-//     for (let i = 0; i <= 2 ; i++) {
-//         const genre = prompt(`yahshi korgan janiringiz ${i + 1}`);
-//         seriesDB.genres[i] = genre;
-//     }
-// }
+ 
